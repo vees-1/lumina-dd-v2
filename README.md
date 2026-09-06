@@ -137,6 +137,28 @@ Consequently, matching pathogenic or likely-pathogenic evidence has two effects:
 
 For backward compatibility only, unreviewed legacy requests without genetic evidence use modality ceilings of `40%`, `55%`, `65%`, and `80%` for one through four modalities. The current doctor-reviewed path uses the evidence-dependent calculation above.
 
+## Simulated 100-case benchmark
+
+Lumina was evaluated through the authenticated doctor workflow using 100 synthetic clinical notes. Each case recorded the rank of its expected diagnosis in the returned differential. The synthetic notes did not contain gene names or embedded answer labels.
+
+![Lumina case page showing 100 completed simulated cases](docs/benchmarks/lumina_100_case_simulation.png)
+
+| Metric | Result |
+| --- | ---: |
+| Recall@1 | **96.0%** |
+| Recall@3 | **97.0%** |
+| Recall@5 | **98.0%** |
+| Recall@10 | **98.0%** |
+| Mean Reciprocal Rank (MRR) | **96.8%** |
+
+- **Recall@k** is the proportion of evaluated cases where the expected diagnosis appeared within the first `k` returned results.
+- **MRR** is the mean of `1 / rank` for the expected diagnosis across evaluated cases; higher values indicate that the expected diagnosis usually appeared near the top.
+- A rank of `0` represents an expected diagnosis absent from the returned top 10. Blank ranks are excluded as unevaluated cases.
+
+The complete case list, entered ranks, formulas, sources, and metric summary are available in the [100-case benchmark workbook](docs/benchmarks/lumina_100_clinical_notes_recall_mrr.numbers).
+
+These results describe one controlled simulation and have not been independently reproduced or externally validated. They must not be interpreted as clinical accuracy, sensitivity, diagnostic performance, or evidence that Lumina is suitable for patient care.
+
 ## AWS architecture
 
 ![Lumina AWS architecture](docs/assets/lumina_aws_architecture.png)
