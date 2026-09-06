@@ -139,7 +139,7 @@ For backward compatibility only, unreviewed legacy requests without genetic evid
 
 ## AWS architecture
 
-![Lumina AWS architecture](docs/assets/aws_architecture_simple.png)
+![Lumina AWS architecture](docs/assets/lumina_aws_architecture.png)
 
 | AWS service or asset | Responsibility |
 | --- | --- |
