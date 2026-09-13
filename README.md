@@ -34,7 +34,9 @@ The platform has separate doctor and patient workspaces:
 
 ## Demo video
 
-[Watch the Lumina DD demo on YouTube](https://youtu.be/ecw0CSZpVTE).
+<a href="https://youtu.be/ecw0CSZpVTE">
+  <img src="https://img.youtube.com/vi/ecw0CSZpVTE/maxresdefault.jpg" alt="Watch the Lumina DD demo video" width="100%">
+</a>
 
 ## Clinical workflow
 
