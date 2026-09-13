@@ -32,6 +32,10 @@ The platform has separate doctor and patient workspaces:
 | API health check | [https://twfg22gs48.execute-api.us-east-1.amazonaws.com/health](https://twfg22gs48.execute-api.us-east-1.amazonaws.com/health) |
 | AWS region | `us-east-1` |
 
+## Demo video
+
+[Watch the Lumina DD demo on YouTube](https://youtu.be/ecw0CSZpVTE).
+
 ## Clinical workflow
 
 1. A patient or doctor supplies one or more evidence modalities: notes, a clinical photo, a laboratory document, or genetic evidence.
